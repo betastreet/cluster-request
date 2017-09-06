@@ -1,22 +1,3 @@
-# cluster-request
-
-A proxy module to send requests within a Kubernetes cluster of microservices
-
-### Installation
-
-`npm i --save cluster-request`
-
-### Default Request Options
-
-```
-method: 'GET',
-json: true,
-gzip: true
-```
-
-### Usage
-
-```javascript
 const ClusterRequest = require('./lib');
 const log = console;
 
@@ -48,6 +29,3 @@ cluster
     .catch((err) => {
         console.log('Error: ', err);
     });
-```
-
-Source: [demo.js](demo.js)
