@@ -7,16 +7,14 @@ const ClusterRequest = require('cluster-request');
 
 const cluster = new ClusterRequest({
     log, // a Bunyan logger instance
-    {
-        defaultPort: 80,
-        defaultReqOptions: {
-            headers: {
-                'x-user-roles': 'admin',
-            }
+    defaultPort: 80,
+    defaultReqOptions: {
+        headers: {
+            'x-user-roles': 'admin',
         },
         json: true,
         gzip: true,
-    }
+    },
 });
 
 // module.exports = cluster;
