@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.org/betastreet/cluster-request.svg)](https://travis-ci.org/betastreet/cluster-request)
-
+![Version](https://badge.fury.io/js/cluster-request.svg)](http://badge.fury.io/js/cluster-request)
+[![Build Status](https://travis-ci.org/betastreet/cluster-request.svg?branch=master)](https://travis-ci.org/betastreet/cluster-request)
+ 
 # cluster-request
 
 A proxy module to send requests within a Kubernetes cluster of microservices
