@@ -16,7 +16,7 @@ module.exports = (reqOptions, next) => {
     } else if (reqOptions.url === 'http://badjson:443/') {
         const statusCode = 203;
         setImmediate(() => {
-            next(null, {statusCode}, "bad json");
+            next(null, {statusCode, headers: {'content-type': 'APPlicatiON/json'}}, "bad json");
         });
     }
 };
